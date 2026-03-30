@@ -1,0 +1,1028 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Black Mustang";
+    /* src: url('Users/ayadp/Downloads/black-mustang.ttf') */
+    src: url('Fonts/Black Mustang.ttf');
+    /* font-style: normal;
+    font-weight: 100; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* header styles */
+.info {
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+    padding: .5rem;
+    font-size: 15px;
+    font-family: math;
+    text-transform: uppercase;
+    /* font-weight: 600; */
+    /* font-family: sans-serif; */
+    /* font-family: black mustang; */
+    /* text-shadow: 1px 0 black, 0 2px black, 1px 0 black, 0 2px black; */
+    /* text-shadow: 1px 0 white, 0 2px white, 1px 0 white, 0 2px white; */
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 0px 1rem;
+    position: relative;
+}
+
+.toro-logo {
+    width: 50px;
+}
+
+.company-logo {
+    display: flex;
+    align-items: center;
+}
+
+.drop-down-rotate {
+    transform: rotate(90deg);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.drop-down {
+    transform: rotate(180deg);
+    transition: all 1s;
+    cursor: pointer;
+    /* display: block; */
+}
+
+/* .drop-down:hover {
+    transform: rotate(90deg);
+    transition: all 2s;
+} */
+
+.sidebar {
+    /* display: none; */
+    position: absolute;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    /* margin-top: 2rem; */
+    /* margin-top: 3.7rem; */
+    /* margin: 20px 0px; */
+    width: 100%;
+    /* height: 400px; */
+    /* height: 100vh; */
+    /* border: 1px solid rgb(0,0,0); */
+    background-color: rgb(255, 255, 255);
+    /* transition: tranform(-100); */
+    transform: translate(-100%);
+    transition: all .5s;
+    z-index: 2;
+}
+
+.show-sidebar {
+    display: block;
+    /* transition: transform(0); */
+    transform: translate(0);
+    z-index: 2;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0px 10px; */
+    /* padding: 1rem; */
+    /* padding: 1.5rem; */
+    padding: 2rem;
+    /* background-color: rgb(15, 15, 224, 0.7); */
+    /* background: rgb(50,50,52); */
+    /* background: linear-gradient(90deg, rgba(50,50,52,1) 0%, rgba(195,195,199,1) 56%); */
+    /* background: linear-gradient(180deg, rgba(50,50,52,1) 0%, rgba(195,195,199,1) 56%); */
+    background: rgb(112,112,115);
+    background: linear-gradient(180deg, rgba(112,112,115,1) 28%, rgba(240,240,245,1) 63%, rgba(255,255,255,1) 100%);
+    /* background-color: #a7a4a4; */
+}
+
+h4 {
+    /* font-family: Black Mustang; */
+    font-weight: 100;
+}
+
+
+/* SIDEBAR STYLES */
+.close-btn {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: red;
+}
+
+.close-btn-rotate {
+    transform: rotate(180deg);
+    transition: all 2s;
+}
+
+.close-btn:hover {
+    transform: rotate(180deg);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.container {
+    /* margin: 0 100px; */
+    /* margin: -10px 70px; */
+    /* margin: -20px 70px; */
+    margin: -30px 70px;
+    font-family: Black Mustang;
+    color: red;
+    font-size: 20px;
+}
+/* experientmental toro img styles */
+/* img  */
+.toro-image
+{
+    display: flex;
+    width: 80px; 
+    position: absolute;
+    top: 0;
+    /* margin: 0 2rem; */
+    margin: 1rem 2rem;
+}
+
+.header-container-label{
+    font-size: 20px;
+    color: red;
+    font-family: 'black mustang';
+    padding: 0px 2rem;
+}
+
+.letters {
+    display: inline-block;
+    position: absolute;
+    padding-bottom: 300px;
+    transform-origin: bottom center;
+    /* border: 1px red dotted; */
+    text-transform: uppercase;
+    /* outline-color: black; */
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+    text-shadow: 1px 0 black, 0 2px black, 1px 0 black, 0 2px black;
+}
+
+.letters {
+    transform: rotate(24deg);
+}
+
+.t {
+    /* transform: rotate(-12deg); */
+    /* transform: rotate(-70deg); */
+    /* transform: rotate(-15deg); */
+    /* transform: rotate(-40deg); */
+    /* transform: rotate(-20deg); */
+    /* transform: rotate(-14deg); */
+    transform: rotate(-15deg);
+
+
+
+
+}
+
+.o {
+    /* transform: rotate(-24deg); */
+    /* transform: rotate(-60deg); */
+    /* transform: rotate(-38deg); */
+    /* transform: rotate(-18deg); */
+    transform: rotate(-13deg);
+
+
+}
+
+.r {
+    /* transform: rotate(-36deg); */
+    /* transform: rotate(-50deg); */
+    /* transform: rotate(-36deg); */
+    /* transform: rotate(-16deg); */
+    transform: rotate(-11deg);
+
+
+}
+
+.o-second {
+    /* transform: rotate(-40deg); */
+    /* transform: rotate(-34deg); */
+    /* transform: rotate(-14deg); */
+    transform: rotate(-9deg);
+
+
+}
+
+.s {
+    /* transform: rotate(-30deg); */
+    /* transform: rotate(-32deg); */
+    transform: rotate(-7deg);
+
+}
+
+.a {
+    /* transform: rotate(-48deg); */
+    /* transform: rotate(-20deg); */
+    /* transform: rotate(-30deg); */
+    transform: rotate(-5deg);
+
+}
+
+.u {
+    /* transform: rotate(60deg); */
+    /* transform: rotate(-10deg); */
+    /* transform: rotate(-9deg); */
+    transform: rotate(-3deg);
+
+}
+
+.t-second {
+    /* transform: rotate(0deg); */
+    transform: rotate(-5deg);
+}
+
+.o-third {
+    /* transform: rotate(10deg); */
+    transform: rotate(-3deg);
+}
+
+.d {
+    /* transform: rotate(80deg); */
+    /* transform: rotate(20deg); */
+    transform: rotate(-4deg);
+}
+
+.e {
+    /* transform: rotate(95deg); */
+    /* transform: rotate(30deg); */
+    transform: rotate(-2deg);
+}
+
+.t-third {
+    /* transform: rotate(40deg); */
+    transform: rotate(0deg);
+}
+
+.a-second {
+    /* transform: rotate(50deg); */
+    transform: rotate(2deg);
+}
+
+.i {
+    /* transform: rotate(60deg); */
+    transform: rotate(4deg);
+}
+
+.l {
+    /* transform: rotate(70deg); */
+    transform: rotate(5deg);
+
+}
+
+.i-second {
+    /* transform: rotate(80deg); */
+    transform: rotate(7deg);
+
+}
+
+.n {
+    /* transform: rotate(90deg); */
+    transform: rotate(8deg);
+
+}
+
+.g {
+    /* transform: rotate(100deg); */
+    transform: rotate(10deg);
+
+}
+
+.i-third {
+    transform: rotate(13deg);
+
+}
+
+.e-second {
+    transform: rotate(14deg);
+
+}
+
+/* close button */
+.close-btn {
+    color: red;
+}
+
+ul.links {
+    list-style-type: none;
+    font-family: black mustang;
+}
+
+.nav-li {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.nav-li:hover {
+    /* background-color: black; */
+    background-color: rgba(240,240,245,1);
+}
+
+.a-link {
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+}
+
+.social-links-container {
+    display: grid;
+}
+
+.social-links {
+    /* display: flex;
+    justify-content: space-evenly; */
+    display: grid;
+    grid-template-columns: repeat(2, 20px);
+    grid-template-rows: 400px;
+    grid-gap: 10px;
+    place-self: center;
+    list-style-type: none;
+}
+
+li.facebook-link, li.instagram-link {
+    margin: auto;
+    cursor: pointer;
+    padding: 0px 5px;
+}
+
+/* main page styles */
+/* .hero-section {
+    position: relative;
+} */
+
+/* DETAIL HERO STYLES */
+.detail-hero {
+    width: 100%;
+}
+
+.hero-title {
+    /* background-color: red; */
+    /* background-color: rgba(240,240,245,1); */
+    background: rgb(112,112,115, 0.1);
+    position: absolute;
+    /* margin-top: 10rem; */
+    margin-top: 16rem;
+    top: 0;
+    /* bottom: 3px; */
+    padding: 0px 5px;
+    color: white;
+    font-family: 'black mustang';
+    font-size: 29px;
+    /* font-size: 1.5rem; */
+    width: 100%;
+    /* z-index: 0; */
+    /* text-align: center; */
+}
+
+/* MAIN BODY STYLES */
+.main-title {
+    text-align: center;
+    font-family: 'black mustang';
+    /* font-size: 20px; */
+    font-size: 2rem;
+    padding: 25px;
+    color: rgb(255, 0, 0);
+    margin: -50px 20px;
+    
+}
+
+.whatwedo-title {
+    font-family: 'black mustang';
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.title-description {
+    /* color: grey;
+    padding: 1rem;
+    line-height: 1.5; */
+    text-align: left;
+    padding: 1rem;
+    line-height: 2;
+    font-family: math;
+    color: rgb(128, 128, 128, 0.7);
+}
+
+.service-c, .service-n, .service-o, .service-e, .service-w, .service-t, .service-u {
+    font-family: black mustang;
+    color: black;
+    /* font-size: 30px; */
+    font-size: 2rem;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: -10px;
+}
+
+.main-description {
+    text-align: left;
+    padding: 1rem;
+    line-height: 1.5;
+    font-family: math;
+    color: rgb(128, 128, 128, 0.7);
+}
+
+/* main body styles Benefits Section */
+
+.benefits-content {
+    /* background-color: grey; */
+    background-color: rgb(128, 128, 128, 0.6);
+    padding: 1rem;
+}
+
+.benefits-img {
+    padding: 1rem;
+}
+
+.detail-img {
+    width: 80%;
+    /* margin: auto; */
+    display: block;
+    /* padding: 2rem; */
+    margin: 2rem;
+    border: 10px solid grey;
+    border: 20px solid rgba(128, 120, 120);
+}
+
+h5.benefits-title {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'black mustang';
+    font-weight: 100;
+    color: rgb(255, 0, 0);
+}
+
+.benefits-list {
+    /* padding: 2rem;
+    color:darkred; */
+    padding: 1rem 3rem;
+    font-family: math;
+    text-transform: uppercase;
+
+}
+
+.ul-link {
+    padding: .5rem;
+}
+button.cta {
+    display: block;
+    margin: auto;
+    padding: 5px 10px;
+    box-shadow: -2px 3px rgb(128, 128, 128);
+    color: rgb(255, 0 , 0);
+}
+
+/*  Detail service container */
+.detail-service-container {
+    position: relative;
+}
+
+.detail-container-title {
+    font-family: 'black mustang';
+    font-weight: 100;
+    text-align: center;
+    margin: 2rem;
+    font-size: 3rem;
+}
+
+/* .serivice-detail-img {
+
+} */
+.service-detail-img-before {
+    margin: auto;
+}
+
+.service-detail-img-after {
+    margin-left: 15rem;
+    margin-top: 0;
+    transform: scaleX(-1);
+}
+
+.service {
+    padding: 1rem;
+}
+
+h5 {
+    text-align: center;
+    padding: .5rem;
+}
+
+.service-details {
+    line-height: 3;
+    font-family: math;
+    color: rgb(128, 128, 128, 0.7);
+    /* width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent; */
+	border-top: 50px solid #555;
+}
+
+.triangle {
+    width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid #555;
+    margin: auto;
+}
+
+.service-package {
+    font-family: 'black mustang';
+    font-size: 2rem;
+    font-weight: 100;
+    color: rgb(255, 0, 0);
+}
+
+/* Before and after customer work section */
+/* section */
+.before-after-section {
+    background-color: rgb(128, 128, 128, 0.7);
+    padding: 2rem;
+}
+
+/* detail section title */
+.work-section-title {
+    font-family:'black mustang';
+    font-weight: 100;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    padding: 0px 2rem;
+    padding-bottom: 2rem;
+}
+
+/* prev detail h4 */
+.prev-detail {
+    text-align: center;
+    font-family: 'black mustang';
+    font-size: 2rem;
+}
+
+/* detail img title */
+.prev-title, .after-title {
+    font-family: 'black mustang';
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+/* detail before and after images */
+.detail-prev-wheel, .detail-after-wheel {
+    width: 100%;
+    display: block;
+    margin: 2rem auto;
+}
+
+.detail-mustang-prev, .detail-mustang-after {
+    width: 100%;
+    display: block;
+    margin: 2rem auto;
+}
+
+/* why choose us section */
+.whychooseus-title {
+    /* margin: 2rem; */
+    margin-top: 2rem;
+    text-align: center;
+    font-family: 'black mustang';
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+.whychooseus-description {
+    padding: 1rem;
+    line-height: 2;
+    color: rgb(128, 128, 128, 0.7);
+}
+
+.underline {
+border: 1px solid rgb(128, 128, 128, 0.7);
+width: 80%;
+margin: auto;
+}
+/* map location section */
+/* .map-section {
+    border-top: 1px solid rgb(128, 128, 128, 0.7);
+} */
+
+.map-header {
+    margin: 2rem;
+    font-family: math;
+}
+
+.business-name {
+    text-transform: uppercase;
+    text-align: center;
+    /* padding: 1rem; */
+    padding: 10px;
+}
+
+.business-phone, .business-email, .service-area-description {
+    text-align: center;
+    /* padding: 1rem; */
+    padding: 10px;
+    line-height: 2;
+    color: rgb(128, 128, 128, 0.7);
+}
+
+.number, .map-email {
+    color: red;
+}
+
+.service-area-description {
+    color: rgb(255, 0, 0);
+}
+
+iframe {
+    width: 100%;
+    height: 10rem;
+}
+
+/* FOOTER STYLES */
+.footer-container {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+    align-items: center;
+    /* position: fixed;
+    bottom: 0; */
+    /* height: 100vh; */
+    position: relative;
+    font-size: 10px;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(0, 0, 0);
+}
+
+/* .footer-logo-img {
+    width: 50px;
+} */
+.linkWithUs {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    align-items: center;
+    top: 0;
+    color: rgb(255, 0, 0);
+    list-style-type: none;
+    margin: 1rem;
+    text-transform: uppercase;
+}
+
+.facebook-footer-link, .instagram-footer-link {
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+.footer-container-label {
+    font-size: 20px;
+    color: red;
+    font-family: 'black mustang';
+    padding: 0px 2rem;
+}
+
+.terms, .footer-links {
+    color: rgb(255, 0, 0);
+}
+
+/* .copyright {
+    padding-top: 3rem;
+} */
+
+.footer-links {
+    /* display: flex; */
+    margin: 5px 20px;
+}
+
+ul.products-links, ul.services-links {
+    list-style-type: none;
+}
+
+.product-title, .service-title {
+    /* padding: 10px 0px; */
+    font-family: 'Black Mustang';
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.product-link, .service-link {
+    padding: 3px 0px;
+    cursor: pointer;
+    font-family: math;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(255, 0, 0    );
+}
+
+/* MEDIA 768px */
+@media screen and (min-width: 768px) {
+
+/* nav content fix experiment */
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 0px 1rem;
+    position: relative;
+}
+
+.sidebar {
+    margin: 0;
+    /* position: static; */
+    background-color: black;
+    transform: none;
+    transition: none;
+
+}
+
+.sidebar-header {
+    padding: 1.9rem;
+    background: none;
+    display: none;
+}
+
+/* .toro-image {
+    display: none;
+} */
+
+
+.letters {
+    display: none;
+}
+
+.close-btn {
+    display: none;
+}
+
+.header-links {
+    position: absolute;
+    height: 5vh;
+    right: 0;
+    /* top: 0;
+    left: 0;
+    margin-left: 20rem; */
+    display: flex;
+    align-items: center;
+    margin: .5rem;
+}
+
+ul.links {
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.drop-down {
+    display: none;
+}
+
+
+
+/* Header Styles 768px */
+.header-container-label{
+    font-size: 1.5rem;
+    color: red;
+        font-family: 'black mustang';
+        padding: 0px 2rem;
+    }
+
+/* SIDEBAR STYLES width 768px*/
+
+.detail-hero-div {
+    background: linear-gradient(180deg, rgba(112, 112, 115, 1) 28%, rgba(240, 240, 245, 1) 63%, rgba(255, 255, 255, 1) 100%);
+}
+
+.detail-hero {
+    /* width: 70%; */
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.main-title {
+    /* font-size: 4rem; */
+    /* font-size: 3rem;
+    padding: 1rem 8rem; */
+    font-size: 3rem;
+    padding: 1rem 10rem;
+}
+
+.title-description {
+    padding: 5rem;
+    line-height: 3;
+    font-size: 20px;
+}
+
+.show-sidebar {
+    width: 400px;
+}
+
+/* benefits container width 768px */
+.benefits-content {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+/* .benefits-imge {
+    width: 50%;
+} */
+
+/* .detail-img {
+    width: 100%;
+    width: 80%;
+}
+
+.benefits-details {
+    line-height: 3;
+    margin: auto;
+    font-size: 1.5rem;
+} */
+
+.benefits-list {
+    padding: 0rem 4rem;
+    /* margin-left:  5rem; */
+    font-family: math;
+    text-transform: uppercase;
+}
+
+/* services container */
+
+.services-main-container {
+    display: flex;
+}
+
+.service-detail-img-before {
+    width: 15%;
+}
+
+.service-detail-img-after {
+    /* margin-top: 0; */
+    position: absolute;
+    transform: scaleX(-1);
+    right: 0;
+    width: 15%;
+    margin: auto 0rem;
+}
+
+/* detail service container */
+/* .detail-content {
+    padding: 0px 4rem;
+    line-height: 3;
+    font-size: 20px;
+} */
+
+.detail-container-title {
+    font-size: 3rem;
+}
+
+.work-section {
+    display: flex;
+}
+
+.previous-image {
+    width: 100%;
+}
+
+.after-image {
+    width: 100%;
+    /* padding: 3rem;
+    width: 50%; */
+}
+
+.service {
+    /* padding: 3rem 10rem; */
+    padding: 3rem;
+    width: 50%;
+}
+
+.detail-prev-wheel, .detail-after-wheel {
+    width: 80%;
+}
+
+.detail-mustang-prev, .detail-mustang-after {
+    width: 80%;
+}
+
+.whychooseus-description {
+    padding: 5rem;
+    line-height: 3;
+    font-family: math;
+    color: rgb(128, 128, 128, 0.7);
+    font-size: 20px;
+}
+
+.toros {
+    color: rgb(255, 0, 0);
+}
+
+/* map header width 768px */
+.map-header {
+    font-size: 1.5rem;
+}
+
+/* footer styles width 768px */
+
+.footer-container {
+    font-size: 15px;
+}
+
+.footer-container-label {
+    font-size: 40px;
+}
+
+}
+
+/* min width 1024px */
+
+/* .title-description {
+    font-size: 1.5rem;
+} */
+
+.detail-imge {
+    width: 80%;
+}
+
+.detail-img {
+    /* min-width: 60%; */
+    min-width: 60%;
+    max-width: 60%;
+    margin: auto;
+}
+
+/* .benefits-imge {
+    max-width: 100%;
+    min-width: 60%;
+    max-width: 80%;
+} */
+
+/* .benefits-details {
+    font-size: 1.5rem;
+} */
+
+.detail-prev-wheel, .detail-after-wheel {
+    width: 60%;
+}
+
+.detail-mustang-prev, .detail-mustang-after {
+    width: 60%;
+}
+
+/* media query 1024px */
+@media screen and (min-width: 1024px) {
+
+    /* benefits container styles */
+    .benefits-imge {
+        width: 50%;
+    }
+
+    .detail-img {
+        width: 50%;
+        margin: 2rem auto;
+    }
+
+    .benefits-list {
+        font-size: 2rem;
+    }
+
+    .benefits-detail {
+        font-size: 1.5rem;
+    }
+
+    /* li:nth-child(odd) {
+        background-color: red;
+    } */
+    /* li.facebook-link:nth-child(even) {
+        background-color: rgb(128, 128, 128);
+    } */
+    /* .interior-service, .claybar-service, .coating-service {
+        background-color: rgb(128, 128, 128);
+    } */
+    /* .service-o, .service-w, .service-u {
+        background-color: rgb(128, 128, 128);
+    } */
+    /* .service-details {
+        background-color: rgb(128, 128, 128);
+    } */
+}

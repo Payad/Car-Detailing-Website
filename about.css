@@ -1,0 +1,676 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Black Mustang";
+    /* src: url('Users/ayadp/Downloads/black-mustang.ttf') */
+    src: url('Fonts/Black Mustang.ttf');
+    /* font-style: normal;
+    font-weight: 100; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* header styles */
+.info {
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+    padding: .5rem;
+    font-size: 15px;
+    font-family: math;
+    text-transform: uppercase;
+    /* font-weight: 600; */
+    /* font-family: sans-serif; */
+    /* font-family: black mustang; */
+    /* text-shadow: 1px 0 black, 0 2px black, 1px 0 black, 0 2px black; */
+    /* text-shadow: 1px 0 white, 0 2px white, 1px 0 white, 0 2px white; */
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 0px 1rem;
+    position: relative;
+}
+
+.toro-logo {
+    width: 50px;
+}
+
+.company-logo {
+    display: flex;
+    align-items: center;
+}
+
+.drop-down-rotate {
+    transform: rotate(90deg);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.drop-down {
+    transform: rotate(180deg);
+    transition: all 1s;
+    cursor: pointer;
+    /* display: block; */
+}
+
+/* .drop-down:hover {
+    transform: rotate(90deg);
+    transition: all 2s;
+} */
+
+.sidebar {
+    /* display: none; */
+    position: absolute;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    /* margin-top: 2rem; */
+    /* margin-top: 3.7rem; */
+    /* margin: 20px 0px; */
+    width: 100%;
+    /* height: 400px; */
+    /* height: 100vh; */
+    /* border: 1px solid rgb(0,0,0); */
+    background-color: rgb(255, 255, 255);
+    /* transition: tranform(-100); */
+    transform: translate(-100%);
+    transition: all .5s;
+    z-index: 2;
+}
+
+.show-sidebar {
+    display: block;
+    /* transition: transform(0); */
+    transform: translate(0);
+    z-index: 2;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0px 10px; */
+    /* padding: 1rem; */
+    /* padding: 1.5rem; */
+    padding: 2rem;
+    /* background-color: rgb(15, 15, 224, 0.7); */
+    /* background: rgb(50,50,52); */
+    /* background: linear-gradient(90deg, rgba(50,50,52,1) 0%, rgba(195,195,199,1) 56%); */
+    /* background: linear-gradient(180deg, rgba(50,50,52,1) 0%, rgba(195,195,199,1) 56%); */
+    background: rgb(112,112,115);
+    background: linear-gradient(180deg, rgba(112,112,115,1) 28%, rgba(240,240,245,1) 63%, rgba(255,255,255,1) 100%);
+    /* background-color: #a7a4a4; */
+}
+
+h4 {
+    /* font-family: Black Mustang; */
+    font-weight: 100;
+}
+
+
+/* SIDEBAR STYLES */
+.close-btn {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: red;
+}
+
+.close-btn-rotate {
+    transform: rotate(180deg);
+    transition: all 2s;
+}
+
+.close-btn:hover {
+    transform: rotate(180deg);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.container {
+    /* margin: 0 100px; */
+    /* margin: -10px 70px; */
+    /* margin: -20px 70px; */
+    margin: -30px 70px;
+    font-family: Black Mustang;
+    color: red;
+    font-size: 20px;
+}
+/* experientmental toro img styles */
+/* img  */
+.toro-image
+{
+    display: flex;
+    width: 80px; 
+    position: absolute;
+    top: 0;
+    /* margin: 0 2rem; */
+    margin: 1rem 2rem;
+}
+
+.header-container-label{
+    font-size: 20px;
+    color: red;
+    font-family: 'black mustang';
+    padding: 0px 2rem;
+}
+
+.letters {
+    display: inline-block;
+    position: absolute;
+    padding-bottom: 300px;
+    transform-origin: bottom center;
+    /* border: 1px red dotted; */
+    text-transform: uppercase;
+    /* outline-color: black; */
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+    text-shadow: 1px 0 black, 0 2px black, 1px 0 black, 0 2px black;
+}
+
+.letters {
+    transform: rotate(24deg);
+}
+
+.t {
+    /* transform: rotate(-12deg); */
+    /* transform: rotate(-70deg); */
+    /* transform: rotate(-15deg); */
+    /* transform: rotate(-40deg); */
+    /* transform: rotate(-20deg); */
+    /* transform: rotate(-14deg); */
+    transform: rotate(-15deg);
+
+
+
+
+}
+
+.o {
+    /* transform: rotate(-24deg); */
+    /* transform: rotate(-60deg); */
+    /* transform: rotate(-38deg); */
+    /* transform: rotate(-18deg); */
+    transform: rotate(-13deg);
+
+
+}
+
+.r {
+    /* transform: rotate(-36deg); */
+    /* transform: rotate(-50deg); */
+    /* transform: rotate(-36deg); */
+    /* transform: rotate(-16deg); */
+    transform: rotate(-11deg);
+
+
+}
+
+.o-second {
+    /* transform: rotate(-40deg); */
+    /* transform: rotate(-34deg); */
+    /* transform: rotate(-14deg); */
+    transform: rotate(-9deg);
+
+
+}
+
+.s {
+    /* transform: rotate(-30deg); */
+    /* transform: rotate(-32deg); */
+    transform: rotate(-7deg);
+
+}
+
+.a {
+    /* transform: rotate(-48deg); */
+    /* transform: rotate(-20deg); */
+    /* transform: rotate(-30deg); */
+    transform: rotate(-5deg);
+
+}
+
+.u {
+    /* transform: rotate(60deg); */
+    /* transform: rotate(-10deg); */
+    /* transform: rotate(-9deg); */
+    transform: rotate(-3deg);
+
+}
+
+.t-second {
+    /* transform: rotate(0deg); */
+    transform: rotate(-5deg);
+}
+
+.o-third {
+    /* transform: rotate(10deg); */
+    transform: rotate(-3deg);
+}
+
+.d {
+    /* transform: rotate(80deg); */
+    /* transform: rotate(20deg); */
+    transform: rotate(-4deg);
+}
+
+.e {
+    /* transform: rotate(95deg); */
+    /* transform: rotate(30deg); */
+    transform: rotate(-2deg);
+}
+
+.t-third {
+    /* transform: rotate(40deg); */
+    transform: rotate(0deg);
+}
+
+.a-second {
+    /* transform: rotate(50deg); */
+    transform: rotate(2deg);
+}
+
+.i {
+    /* transform: rotate(60deg); */
+    transform: rotate(4deg);
+}
+
+.l {
+    /* transform: rotate(70deg); */
+    transform: rotate(5deg);
+
+}
+
+.i-second {
+    /* transform: rotate(80deg); */
+    transform: rotate(7deg);
+
+}
+
+.n {
+    /* transform: rotate(90deg); */
+    transform: rotate(8deg);
+
+}
+
+.g {
+    /* transform: rotate(100deg); */
+    transform: rotate(10deg);
+
+}
+
+.i-third {
+    transform: rotate(13deg);
+
+}
+
+.e-second {
+    transform: rotate(14deg);
+
+}
+
+/* close button */
+.close-btn {
+    color: red;
+}
+
+ul.links {
+    list-style-type: none;
+    font-family: black mustang;
+}
+
+.nav-li {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.nav-li:hover {
+    /* background-color: black; */
+    background-color: rgba(240,240,245,1);
+}
+
+.a-link {
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+}
+
+.social-links-container {
+    display: grid;
+}
+
+.social-links {
+    /* display: flex;
+    justify-content: space-evenly; */
+    display: grid;
+    grid-template-columns: repeat(2, 20px);
+    grid-template-rows: 400px;
+    grid-gap: 10px;
+    place-self: center;
+    list-style-type: none;
+}
+
+li.facebook-link, li.instagram-link {
+    margin: auto;
+    cursor: pointer;
+    padding: 0px 5px;
+}
+
+/* main page styles */
+/* .hero-section {
+    position: relative;
+} */
+
+/* DETAIL HERO STYLES */
+.detail-hero {
+    width: 100%;
+}
+
+.hero-title {
+    /* background-color: red; */
+    /* background-color: rgba(240,240,245,1); */
+    background: rgb(112,112,115, 0.1);
+    position: absolute;
+    /* margin-top: 10rem; */
+    margin-top: 16rem;
+    top: 0;
+    /* bottom: 3px; */
+    padding: 0px 5px;
+    color: white;
+    font-family: 'black mustang';
+    font-size: 29px;
+    /* font-size: 1.5rem; */
+    width: 100%;
+    /* z-index: 0; */
+    /* text-align: center; */
+}
+
+/* MAIN BODY STYLES */
+.main-title {
+    text-align: center;
+    font-family: 'black mustang';
+    /* font-size: 20px; */
+    font-size: 2rem;
+    padding: 25px;
+    color: rgb(255, 0, 0);
+    margin: -50px 20px;
+    
+}
+
+/* .whatwedo-title {
+    font-family: 'black mustang';
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+} */
+
+/* .service-details {
+    line-height: 3;
+    font-family: math;
+    color: rgb(128, 128, 128, 0.7);
+    border-top: 50px solid #555;
+} */
+
+.title-description {
+    /* color: grey;
+    padding: 1rem;
+    line-height: 1.5; */
+    text-align: left;
+    padding: 1rem;
+    line-height: 2;
+    font-family: math;
+    color: rgb(128, 128, 128, 0.7);
+}
+
+.service-c, .service-n, .service-o, .service-e, .service-w, .service-t, .service-u {
+    font-family: black mustang;
+    color: black;
+    /* font-size: 30px; */
+    font-size: 2rem;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: -10px;
+}
+
+.main-description {
+    text-align: left;
+    padding: 1rem;
+    line-height: 1.5;
+    font-family: math;
+    color: rgb(128, 128, 128, 0.7);
+}
+
+/* Steven image styles */
+.owner-image-div {
+    margin: 2rem 2rem;
+}
+
+.steven-img {
+    width: 55%;
+    height: 22vh;
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 255, 255);
+    border-left: 5px solid rgb(255, 255, 255);
+    border-bottom: 5px solid rgb(255, 255, 255);
+    position: relative;
+}
+
+.title-description-p {
+    line-height: 2;
+    font-family: math;
+    color: rgb(128, 128, 128, 0.7);
+    border-top: 50px solid #555;
+    /* margin: -4rem 2rem; */
+    margin-top: -4rem;
+    padding: 2rem 0rem;
+    margin-left: 1rem;
+    margin-right: 1rem
+
+}
+
+.triangle {
+    width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid #555;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+/* FOOTER STYLES */
+.footer-container {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+    align-items: center;
+    /* position: fixed;
+    bottom: 0; */
+    /* height: 100vh; */
+    position: relative;
+    font-size: 10px;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(0, 0, 0);
+}
+
+/* .footer-logo-img {
+    width: 50px;
+} */
+.linkWithUs {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    align-items: center;
+    top: 0;
+    color: rgb(255, 0, 0);
+    list-style-type: none;
+    margin: 1rem;
+    text-transform: uppercase;
+}
+
+.facebook-footer-link, .instagram-footer-link {
+    padding: 0px 5px;
+    cursor: pointer;
+}
+
+.footer-container-label {
+    font-size: 20px;
+    color: red;
+    font-family: 'black mustang';
+    padding: 0px 2rem;
+}
+
+.terms, .footer-links {
+    color: rgb(255, 0, 0);
+}
+
+/* .copyright {
+    padding-top: 3rem;
+} */
+
+.footer-links {
+    /* display: flex; */
+    margin: 5px 20px;
+}
+
+ul.products-links, ul.services-links {
+    list-style-type: none;
+}
+
+.product-title, .service-title {
+    /* padding: 10px 0px; */
+    font-family: 'Black Mustang';
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.product-link, .service-link {
+    padding: 3px 0px;
+    cursor: pointer;
+    font-family: math;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+
+
+/* Media query 768px */
+@media screen and (min-width: 768px) {
+    
+    /* nav content fix experiment */
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 0px 1rem;
+    position: relative;
+}
+
+.sidebar {
+    margin: 0;
+    /* position: static; */
+    background-color: black;
+    transform: none;
+    transition: none;
+
+}
+
+.nav-li {
+        /* padding: 0px 1rem; */
+        /* padding: 1rem; */
+        padding:0;
+        margin: 1rem;
+        cursor: pointer;
+        background-color: rgb(0,0,0);
+}
+.a-link {
+    background-color: rgb(0, 0, 0);
+}
+
+.sidebar-header {
+    padding: 1.9rem;
+    background: none;
+    display: none;
+}
+
+.letters {
+    display: none;
+}
+
+.close-btn {
+    display: none;
+}
+
+.header-links {
+    position: absolute;
+    height: 5vh;
+    right: 0;
+    /* top: 0;
+    left: 0;
+    margin-left: 20rem; */
+    display: flex;
+    align-items: center;
+    margin: .5rem;
+}
+
+ul.links {
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.drop-down {
+    display: none;
+}
+
+.mySlides {
+    width: 30%;
+}
+
+/* main title 768px */
+.main-title {
+    font-size: 3rem;
+    padding: 20px;
+}
+
+.title-description {
+    font-size: 1.5rem;
+}
+
+.steven-img {
+    height: initial;
+}
+
+.title-description-p {
+    font-size: 1.5rem;
+    /* margin: 2rem auto; */
+}
+
+
+/* footer 768px */
+.footer-container {
+    font-size: 1rem;
+}
+
+.footer-container-label {
+    font-size: 2rem;
+}
+
+.service-title {
+    font-size: 2rem;
+}
+
+    }
